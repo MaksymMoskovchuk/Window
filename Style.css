@@ -17,6 +17,7 @@ body {
     position: relative;
     background-color: #ffd274;
     border-radius: 10px;
+    box-shadow: 0 2px 5px rgb(252, 175, 82);
     padding: 20px;
     margin: 0 10px;
     text-align: center;
