@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.sticker-container {
+    display: flex;
+}
+
+.sticker {
+    position: relative;
+    background-color: #ffd274;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 10px;
+    text-align: center;
+    height: 300px;
+    width: 300px;
+}
+
+.sticker-content {
+    position: relative;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    font-weight: 800;
+    color: #fcaf52;
+}
+
+.sticker-content::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #000000; /* Чорний колір */
+    width: 50%;
+    height: 40px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
