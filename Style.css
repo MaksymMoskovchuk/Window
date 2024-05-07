@@ -1,44 +1,63 @@
-body, html {
-    height: 100%;
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background-color: #f0f0f0;
 }
-
-.window {
-    background-color: #fff;
-    padding: 20px;
-    border: 4px solid #000000;
-    border-radius: 10px;
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
-
-.container {
+main {
+    width: 100%;
+    max-width: 1200px;
     display: flex;
-    flex-wrap: wrap;
-    width: 800px;
-    height: 500px;
-    border: 2px solid #ff0000;
-    border-radius: 6px;
-    overflow: hidden;
-}
-
-.block {
-    flex: 1 0 50%;
-    background-color: #ffffff;
-    border: 2px solid #ff0000;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
     box-sizing: border-box;
 }
-
-.block h2 {
-    text-align: left;
-    margin: 0;
-    padding: 20px;
-    font-size: 20px;
-
-
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0;
 }
-h1 {
+section {
+    width: 45%;
+    height: 300px;
+    background-color: #4CAF50;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin: 0; /* Видалення зовнішніх відступів */
+    flex-grow: 1; /* Розтягнення блоків на всю доступну ширину */
+    border: 2px solid #333; /* Додавання межі */
+    box-sizing: border-box; /* Врахування межі у розрахунку ширини */
+}
+section:nth-child(odd) {
+    background-color: #2196F3;
+}
+ul {
+    list-style: none;
+    padding: 0;
     text-align: center;
+}
+li {
+    margin-bottom: 5px;
+}
+li span {
+    font-weight: bold;
 }
